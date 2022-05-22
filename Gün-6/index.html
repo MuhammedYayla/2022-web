@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>index</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        .icon-bar a {
+    background-color: grey;
+    text-align: center;
+    float: right;
+    font-size: 30px;
+    color: white;
+    width: 16.66%;
+
+}
+.icon-bar{
+    background-color: grey;
+    width: 100%;
+
+
+}
+.fa-book {
+color: white;
+width: 100%;
+background-color: green;
+
+}
+.fa-spinner{
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+}
+a :hover{
+    color: aqua;
+    background-color: darkgrey;
+    width: 100%;
+    transition: 1s;
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(180deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    </style>
+</head>
+<body>
+<div class="icon-bar">
+  <a href="#"><i class="fa fa-book"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a id="mail" href="#" ><i class="fa fa-envelope"></i></a>
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+  <a href="#"><i class="fa fa-spinner"></i></a>
+ </div>
+</body>
+</html>
