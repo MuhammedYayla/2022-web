@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            border: 3px solid grey;
+            width: auto;
+            height: auto;
+            text-align: left;
+            background-color: #f0f0f0; 
+            margin: 5px auto;
+            padding: 7px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        #demo1 {
+            border: 3px solid grey;
+            width: auto;
+            height: auto;
+            text-align: left;
+            background-color: #f0f0f0; 
+            margin: 5px auto;
+            padding: 7px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        #btn-cars {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 5px auto;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    Const Hali
+    <p id="demo"></p>
+    Var Hali
+    <p id="demo1"></p>
+    <button id="btn-cars">Tıkla</button>
+    <script>
+        const cars2 = ["BMW", "Volvo", "Saab", "Ford"];
+        {
+        const cars2 = ["Toyota", "Mercedes", "Audi"];
+        }
+
+
+        var cars1 = ["BMW", "Volvo", "Saab", "Ford"];
+         {
+        var cars1 = ["Toyota", "Mercedes", "Audi"];
+         }
+        document.getElementById("btn-cars").onclick = function() {
+            document.getElementById("demo1").innerHTML = cars1
+            document.getElementById("demo").innerHTML = cars2;
+        };
+    </script>
+</body>
+</html>

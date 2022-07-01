@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="demo"></p>
+<script>
+     //8.ÖRNEK
+     //JavaScript, sayısal sabitleri, başında 0x varsa, onaltılık olarak yorumlar.
+let f = 0xFF;
+document.getElementById("demo").innerHTML = "0xFF = " + f;
+</script>
+
+<p id="demo"></p>
+<script>
+    //9.ÖRNEK
+    //Varsayılan olarak JavaScript, sayıları 10 tabanlı ondalık basamak olarak görüntüler.
+
+// Ancak, 2 tabanından 36 tabanına kadar sayılarıntoString() çıktısını almak için yöntemi kullanabilirsiniz .
+
+// Onaltılık taban 16'dır . Ondalık taban 10'dur . Sekizli taban 8'dir . İkili taban 2'dir .
+// let myNumber = 32;
+document.getElementById("demo").innerHTML =
+"Decimal 32 = " + "<br><br>" + 
+
+"Hexatrigesimal (base 36): " + myNumber.toString(36) + "<br>" +
+"Duotrigesimal (base 32): " + myNumber.toString(32) + "<br>" +
+"Hexadecimal (base 16): " + myNumber.toString(16) + "<br>" +
+"Duodesimal (base 12): " + myNumber.toString(12) + "<br>" +
+"Desimal (base 10): " + myNumber.toString(10) + "<br>" +
+"Octal (base 8): " + myNumber.toString(8) + "<br>" +
+"Binary (base 2): " + myNumber.toString(2);
+</script>
+
+
+<p id="demo"></p>
+<script>
+    //10.ÖRNEK
+    //Operatörü kullanırken ==, x ve y eşittir :
+    // Operatörü kullanırken ===, x ve y eşit değildir .
+// x is a number
+let s = 500;
+// y is an object
+let t = new Number(500);
+document.getElementById("demo").innerHTML = (s==t);
+</script>
+</body>
+</html>

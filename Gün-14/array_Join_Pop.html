@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+
+    //1.ÖRNEK
+    //JavaScript yöntemi toString(), bir diziyi (virgülle ayrılmış) dizi değerleri dizisine dönüştürür.
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits1.toString();
+
+    //2.ÖRNEK
+    //Yöntem join()ayrıca tüm dizi öğelerini bir dizgede birleştirir.
+// Tıpkı gibi davranır toString(), ancak ek olarak ayırıcıyı belirtebilirsiniz:
+const fruits2 = ["1", "2", "3", "4"];
+document.getElementById("demo").innerHTML = fruits2.join(" * ");
+
+    //3.ÖRNEK
+    //Yöntem pop(), dizideki son öğeyi kaldırır:
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits3;
+fruits3.pop();
+document.getElementById("demo2").innerHTML = fruits3;
+</script>
+
+</body>
+</html>

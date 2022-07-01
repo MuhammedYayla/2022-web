@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-Iteration</title>
+    <style>
+        #demo {
+            border: 3px solid grey;
+            width: auto;
+            height: auto;
+            text-align: left;
+            background-color: #f0f0f0; 
+            margin: 5px auto;
+            padding: 7px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        #demo1 {
+            border: 3px solid grey;
+            width: auto;
+            height: auto;
+            text-align: left;
+            background-color: #f0f0f0; 
+            margin: 5px auto;
+            padding: 7px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        #demo2 {
+            border: 3px solid grey;
+            width: auto;
+            height: auto;
+            text-align: left;
+            background-color: #f0f0f0; 
+            margin: 5px auto;
+            padding: 7px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        #btn-onclick {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 5px auto;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button id="btn-onclick">Click Me</button>
+
+    <script>
+        /*
+        // Örnek:1 Yöntem forEach(), her dizi öğesi için bir işlevi (geri çağırma işlevi) bir kez çağırır.
+        var numbers = [1, 2, 3, 4, 5];
+        var txt = "";
+        numbers.forEach(myFunction);
+        document.getElementById("btn-onclick").onclick = function() {
+            document.getElementById("demo").innerHTML = txt;
+        }
+        function myFunction(value,index,array){
+            txt += value + "<br>";
+        }
+
+        // Örnek:2 53'ün altındaki sayıların değerlerini alan bir fonksiyon yazın.
+        var numbers2 = [24, 53, 78, 91, 12];
+        let allUnder53 = numbers2.filter(myFunction2);
+        document.getElementById("btn-onclick").onclick = function() {
+            document.getElementById("demo1").innerHTML = "All numbers are under 53: " + allUnder53;
+        }
+        function myFunction2(value){
+            return value < 53;
+        }
+
+        // Örnek:3  Dizideki bütün elemanlar 53'ün üstünde ise true değilse false değerini döndüren bir fonksiyon yazın.
+        var numbers3 = [24, 53, 78, 91, 12];
+        let allOver53 = numbers3.every(myFunction3);
+        document.getElementById("btn-onclick").onclick = function() {
+            document.getElementById("demo2").innerHTML = "All numbers are over 53: " + allOver53;
+        }
+        function myFunction3(value){
+            return value > 53;
+        }
+        */
+
+        // Örnek:4 Örnek1-2-3'ün sonuçlarının birleştirilmesi için bir fonksiyon yazın.
+        var numbers4 = [24, 53, 78, 91, 12];
+        let ThisUnder53 = numbers4.filter(myFunction4);
+        let ThisOver53 = numbers4.filter(myFunction4);
+        let AllOver53 = numbers4.every(myFunction4);
+        var txt = "";
+        numbers4.forEach(myFunction4);
+        document.getElementById("btn-onclick").onclick = function() {
+            document.getElementById("demo").innerHTML = txt;
+            document.getElementById("demo1").innerHTML = "This numbers are under 53: " + ThisUnder53;
+            document.getElementById("demo2").innerHTML = "This numbers are over 53: " + ThisOver53;
+            document.getElementById("demo2").innerHTML = "All numbers are over 53: " + AllOver53;
+        }
+        function myFunction4(value,index,array){
+            txt += value + "<br>";
+            return value < 53;
+            return value > 53;
+        }
+
+
+
+    </script>
+</body>
+</html>

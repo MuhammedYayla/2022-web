@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        //5.ÖRNEK
+        //JavaScript, tüm sayısal işlemlerde dizeleri sayılara dönüştürmeye çalışır:
+    let d = "100";
+    let e = "10";
+    let z = d / e;   
+    document.getElementById("demo").innerHTML = z;
+   
+        //6.ÖRNEK
+        //NaNbir sayının yasal bir sayı olmadığını belirten JavaScript'e ayrılmış bir kelimedir.
+    
+    // Sayısal olmayan bir dizeyle aritmetik yapmaya çalışmak NaN(Sayı Değil):
+    document.getElementById("demo1").innerHTML = 100 / "Apple";
+    
+        //7.ÖRNEK
+        //Ancak, dize sayısal bir değer içeriyorsa sonuç bir sayı olacaktır:
+    document.getElementById("demo2").innerHTML = 100 / "10";
+    </script>
+</body>
+</html>

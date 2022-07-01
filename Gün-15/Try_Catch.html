@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            border: 3px solid grey;
+            width: auto;
+            height: auto;
+            text-align: left;
+            background-color: #f0f0f0; 
+            margin: 5px auto;
+            padding: 7px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        #demo1 {
+            border: 3px solid grey;
+            width: auto;
+            height: auto;
+            text-align: left;
+            background-color: #f0f0f0; 
+            margin: 5px auto;
+            padding: 7px;
+            font-size: 20px;
+
+        }
+        #btn-cars {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 5px auto;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-style: italic;
+            font-weight: bold;
+        }
+        #btn-cars:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    Try-Catch
+    <p id="demo"></p>
+    Array-Push
+    <p id="demo1"></p>
+
+    <button id="btn-cars" onclick="btn_cars">Tıkla</button>
+    <script>
+
+        try {
+            const cars = ["BMW", "Volvo", "Saab", "Ford"];
+            cars = ["Toyota", "Mercedes", "Audi"];
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err;
+            }
+
+
+        const cars2 = ["BMW", "Audi", "Mercedes", "Toyota"];
+        cars2[0] = "Volvo";
+        cars2.push("Saab");
+        document.getElementById("btn-cars").onclick = function() {
+            document.getElementById("demo1").innerHTML = cars2;
+        }
+        
+    </script>
+</body>
+</html>
